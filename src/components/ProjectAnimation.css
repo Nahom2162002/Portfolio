@@ -1,0 +1,216 @@
+.proj-anim {
+  width: 100%;
+  height: 100px;
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* ---------- INFODIET: 8-category budget meter ---------- */
+
+.infodiet-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  height: 52px;
+}
+
+.infodiet-bar {
+  width: 7px;
+  background: var(--accent);
+  border-bottom: 2px solid var(--accent-border-half);
+  animation: infodiet-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes infodiet-pulse {
+  0%,
+  100% {
+    height: 8px;
+    opacity: 0.5;
+  }
+  50% {
+    height: 44px;
+    opacity: 1;
+  }
+}
+
+/* ---------- LOCKEDIN: padlock that slams shut ---------- */
+
+.lockedin-lock {
+  position: relative;
+  width: 56px;
+  height: 58px;
+}
+
+.lockedin-shackle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 40px;
+  height: 26px;
+  transform-origin: bottom center;
+  animation: lockedin-slam 2.4s ease-in-out infinite;
+}
+
+.lockedin-shackle-left,
+.lockedin-shackle-right {
+  position: absolute;
+  top: 0;
+  width: 7px;
+  height: 26px;
+  background: var(--accent);
+}
+
+.lockedin-shackle-left {
+  left: 0;
+}
+
+.lockedin-shackle-right {
+  right: 0;
+}
+
+.lockedin-shackle-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 7px;
+  background: var(--accent);
+}
+
+.lockedin-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 56px;
+  height: 32px;
+  background: var(--accent);
+}
+
+.lockedin-keyhole {
+  position: absolute;
+  top: 8px;
+  left: 24px;
+  width: 8px;
+  height: 8px;
+  background: var(--bg-card);
+}
+
+@keyframes lockedin-slam {
+  0%,
+  12% {
+    transform: translateY(-12px) rotate(-12deg);
+  }
+  30%,
+  58% {
+    transform: translateY(0) rotate(0deg);
+  }
+  66% {
+    transform: translateY(2px) rotate(0deg);
+  }
+  74% {
+    transform: translateY(-1px) rotate(0deg);
+  }
+  82%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* ---------- SAFE HAVEN: pixel shield with vetting pulse ---------- */
+
+.safehaven-shield {
+  position: relative;
+  width: 48px;
+  height: 54px;
+  animation: safehaven-pulse 2.4s ease-in-out infinite;
+}
+
+.sh-row {
+  position: absolute;
+  left: 50%;
+  background: var(--accent);
+  transform: translateX(-50%);
+}
+
+.sh-row-1 {
+  top: 0;
+  width: 48px;
+  height: 10px;
+}
+
+.sh-row-2 {
+  top: 10px;
+  width: 48px;
+  height: 10px;
+}
+
+.sh-row-3 {
+  top: 20px;
+  width: 36px;
+  height: 10px;
+}
+
+.sh-row-4 {
+  top: 30px;
+  width: 24px;
+  height: 10px;
+}
+
+.sh-row-5 {
+  top: 40px;
+  width: 12px;
+  height: 12px;
+}
+
+.sh-check {
+  position: absolute;
+  background: var(--bg-card);
+  opacity: 0;
+  animation: safehaven-check 2.4s ease-in-out infinite;
+}
+
+.sh-check-a {
+  width: 4px;
+  height: 12px;
+  top: 24px;
+  left: 17px;
+  transform: rotate(45deg);
+}
+
+.sh-check-b {
+  width: 4px;
+  height: 20px;
+  top: 12px;
+  left: 26px;
+  transform: rotate(-45deg);
+}
+
+@keyframes safehaven-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  50% {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 6px oklch(0.75 0.15 85 / 0.6));
+  }
+}
+
+@keyframes safehaven-check {
+  0%,
+  30% {
+    opacity: 0;
+  }
+  55%,
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
