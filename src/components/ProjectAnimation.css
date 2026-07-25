@@ -214,3 +214,190 @@
     opacity: 0;
   }
 }
+
+/* ---------- BEAT CLAUDE: coder duels an AI robot ---------- */
+
+.duel-stage {
+  position: relative;
+  width: 150px;
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.duel-person {
+  position: relative;
+  width: 30px;
+  height: 54px;
+  transform-origin: bottom center;
+  animation: duel-lunge-left 1.8s ease-in-out infinite;
+}
+
+.duel-person-head {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+}
+
+.duel-person-body {
+  position: absolute;
+  top: 14px;
+  left: 9px;
+  width: 12px;
+  height: 26px;
+  background: var(--accent);
+}
+
+.duel-person-arm {
+  position: absolute;
+  top: 18px;
+  right: 2px;
+  width: 16px;
+  height: 5px;
+  background: var(--accent);
+  transform-origin: left center;
+  animation: duel-swing-person 1.8s ease-in-out infinite;
+}
+
+.duel-robot {
+  position: relative;
+  width: 30px;
+  height: 54px;
+  transform-origin: bottom center;
+  animation: duel-lunge-right 1.8s ease-in-out infinite;
+}
+
+.duel-robot-antenna {
+  position: absolute;
+  top: -8px;
+  left: 13px;
+  width: 3px;
+  height: 8px;
+  background: var(--accent);
+}
+
+.duel-robot-head {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background: var(--accent);
+}
+
+.duel-robot-eye {
+  position: absolute;
+  top: 5px;
+  left: 13px;
+  width: 4px;
+  height: 4px;
+  background: var(--bg-card);
+}
+
+.duel-robot-body {
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  width: 14px;
+  height: 26px;
+  background: var(--accent);
+}
+
+.duel-robot-arm {
+  position: absolute;
+  top: 18px;
+  left: 2px;
+  width: 16px;
+  height: 5px;
+  background: var(--accent);
+  transform-origin: right center;
+  animation: duel-swing-robot 1.8s ease-in-out infinite;
+}
+
+.duel-spark {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: var(--text-primary);
+  opacity: 0;
+  animation: duel-spark-flash 1.8s ease-in-out infinite;
+}
+
+@keyframes duel-lunge-left {
+  0%,
+  38%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(14px) rotate(-8deg);
+  }
+  62% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes duel-lunge-right {
+  0%,
+  38%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(-14px) rotate(8deg);
+  }
+  62% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes duel-swing-person {
+  0%,
+  40%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-40deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes duel-swing-robot {
+  0%,
+  40%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes duel-spark-flash {
+  0%,
+  44%,
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) rotate(45deg) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) rotate(45deg) scale(1.6);
+  }
+  58% {
+    opacity: 0;
+    transform: translateX(-50%) rotate(45deg) scale(0.4);
+  }
+}

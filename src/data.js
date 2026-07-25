@@ -53,7 +53,7 @@ export const education = [
 export const experience = [
   {
     role: 'Software Engineer',
-    company: 'Open Source Contributor',
+    company: 'Civic Tech DC',
     dates: 'Feb 2026 — Present',
     location: 'Remote',
     bullets: [
@@ -88,6 +88,14 @@ export const experience = [
 ]
 
 export const projects = [
+  {
+    name: 'BEAT CLAUDE',
+    icon: 'B',
+    link: 'https://www.beatclaude.dev/',
+    desc: 'A full-stack platform where developers duel Claude AI head-to-head on coding problems, with a Monaco-based editor, sandboxed Judge0 execution, and real-time scoring across correctness, speed, and quality. Features an ELO rating system, a performance dashboard with AI-powered weak-spot detection, and Claude-generated solutions with post-duel explanations.',
+    tags: ['React', 'TypeScript', 'Next.js', 'MongoDB Atlas', 'Stripe', 'Claude API', 'Judge0'],
+    animation: 'beatclaude',
+  },
   {
     name: 'INFODIET',
     icon: 'I',

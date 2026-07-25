@@ -41,10 +41,31 @@ function SafeHavenAnimation() {
   )
 }
 
+function BeatClaudeAnimation() {
+  return (
+    <div className="duel-stage">
+      <div className="duel-person">
+        <span className="duel-person-head" />
+        <span className="duel-person-body" />
+        <span className="duel-person-arm" />
+      </div>
+      <span className="duel-spark" />
+      <div className="duel-robot">
+        <span className="duel-robot-antenna" />
+        <span className="duel-robot-head" />
+        <span className="duel-robot-eye" />
+        <span className="duel-robot-body" />
+        <span className="duel-robot-arm" />
+      </div>
+    </div>
+  )
+}
+
 const ANIMATIONS = {
   infodiet: InfoDietAnimation,
   lockedin: LockedInAnimation,
   safehaven: SafeHavenAnimation,
+  beatclaude: BeatClaudeAnimation,
 }
 
 export default function ProjectAnimation({ variant, className }) {
