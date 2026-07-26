@@ -89,8 +89,8 @@ export const experience = [
 
 export const projects = [
   {
-    name: 'DUELAI',
-    icon: 'D',
+    name: 'CODEDUEL',
+    icon: 'C',
     link: 'https://www.duelai.dev/',
     desc: 'A full-stack platform where developers duel Claude AI head-to-head on coding problems, with a Monaco-based editor, sandboxed Judge0 execution, and real-time scoring across correctness, speed, and quality. Features an ELO rating system, a performance dashboard with AI-powered weak-spot detection, and Claude-generated solutions with post-duel explanations.',
     tags: ['React', 'TypeScript', 'Next.js', 'MongoDB Atlas', 'Stripe', 'Claude API', 'Judge0'],
