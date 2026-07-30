@@ -10,9 +10,12 @@ export default function About() {
         <ImageSlot className="about-portrait" placeholder="Character portrait" src="/IMG_1652.PNG" />
         <div className="about-text">
           <p>
-            Full stack developer with a B.S. in Computational Artificial Intelligence and a track
-            record of shipping production software independently. Launched two Chrome extension
-            SaaS products with Stripe billing and JWT authentication.
+            Full stack developer with a B.S. in Computational Artificial Intelligence 
+            from RIT and a track record of shipping production software independently.
+            Built and launched three SaaS products from scratch: LockedIn, InfoDiet, and CodeDuel. 
+            All with real users, Stripe billing, JWT authentication, and MongoDB 
+            Atlas backends. CodeDuel integrates the Anthropic Claude API to compete 
+            against developers on real coding problems in real time.
           </p>
           <p>
             Open source contributor with professional experience at Honeywell. Fluent in

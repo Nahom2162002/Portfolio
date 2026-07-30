@@ -712,3 +712,129 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 24px 20px;
+  }
+
+  .hero-tagline {
+    padding: 0 8px;
+  }
+
+  .section,
+  .levels-section {
+    padding: 64px 20px;
+  }
+
+  .section-title {
+    margin: 0 0 28px;
+  }
+
+  .levels-subheading {
+    margin-bottom: 56px;
+  }
+
+  .level-row {
+    margin-bottom: 40px;
+  }
+
+  .level-node {
+    max-width: 100%;
+    gap: 14px;
+    padding: 16px 20px;
+  }
+
+  .level-num {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .about-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-portrait {
+    width: 160px;
+    height: 160px;
+  }
+
+  .about-text {
+    padding: 20px;
+  }
+
+  .experience-item {
+    gap: 14px;
+  }
+
+  .experience-card {
+    padding: 16px 18px;
+  }
+
+  .experience-meta {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+
+  .footer {
+    padding: 56px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    text-shadow: 2px 2px 0 var(--accent-border-faint);
+  }
+
+  .btn-start {
+    padding: 14px 24px;
+  }
+
+  .section,
+  .levels-section {
+    padding: 48px 16px;
+  }
+
+  .level-node,
+  .level-node--reverse {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .education-card,
+  .skill-card {
+    padding: 16px 18px;
+  }
+
+  .education-card-header,
+  .experience-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-dates {
+    margin-left: 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    gap: 16px;
+  }
+
+  .btn-nav {
+    font-size: 10px;
+    padding: 10px 14px;
+  }
+}
