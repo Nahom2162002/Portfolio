@@ -88,6 +88,23 @@ export const experience = [
   },
 ]
 
+export const hireRate = '$45–65/hr'
+
+export const hireServices = [
+  'Full-stack web apps — React, Next.js, Node.js',
+  'SaaS products with auth and Stripe billing',
+  'Chrome extensions',
+  'REST APIs and MongoDB backends',
+  'AI integrations — Claude API, OpenAI, Hugging Face',
+  'Vercel and AWS deployments',
+]
+
+export const hirePastWork = [
+  { name: 'LOCKEDIN', link: 'https://deeplockin.com' },
+  { name: 'INFODIET', link: 'https://getinfodiet.app' },
+  { name: 'CODEDUEL', link: 'https://www.duelai.dev/' },
+]
+
 export const projects = [
   {
     name: 'CODEDUEL',

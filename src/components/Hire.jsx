@@ -1,3 +1,4 @@
+import { hireRate, hireServices, hirePastWork } from '../data'
 import SectionNav from './SectionNav'
 import { useGameNav } from '../useGameNav'
 
@@ -19,6 +20,7 @@ export default function Hire() {
             <span className="hire-status-dot" />
             <span className="pixel-font hire-status-name">FREELANCE</span>
           </div>
+          <div className="pixel-font hire-rate">{hireRate}</div>
           <div className="hire-status-desc">
             Available for contract and project-based work — from a single feature to a full
             product build.
@@ -32,6 +34,34 @@ export default function Hire() {
           <div className="hire-status-desc">
             Open to full-time software engineering roles, remote or on-site.
           </div>
+        </div>
+      </div>
+
+      <div className="hire-block">
+        <div className="pixel-font hire-block-title">SERVICES</div>
+        <ul className="hire-list">
+          {hireServices.map((service) => (
+            <li key={service}>{service}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="hire-block">
+        <div className="pixel-font hire-block-title">PAST WORK</div>
+        <div className="hire-past-work">
+          {hirePastWork.map((work) => (
+            <a
+              key={work.name}
+              href={work.link}
+              target="_blank"
+              rel="noreferrer"
+              className="pixel-font hire-work-link"
+              onMouseEnter={onHover}
+              onClick={onClick}
+            >
+              {work.name}
+            </a>
+          ))}
         </div>
       </div>
 
