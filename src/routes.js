@@ -6,5 +6,6 @@ export const ROUTE_ORDER = [
   '/skills',
   '/experience',
   '/projects',
+  '/hire',
   '/connect',
 ]

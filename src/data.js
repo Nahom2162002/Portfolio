@@ -4,6 +4,7 @@ export const levelDefs = [
   { num: '03', title: 'SKILLS', desc: 'Character stats', id: 'skills', route: '/skills' },
   { num: '04', title: 'EXPERIENCE', desc: 'Quest log', id: 'experience', route: '/experience' },
   { num: '05', title: 'PROJECTS', desc: 'Item vault', id: 'projects', route: '/projects' },
+  { num: '06', title: 'HIRE ME', desc: 'Open for new quests', id: 'hire', route: '/hire' },
 ]
 
 export const skillGroups = [

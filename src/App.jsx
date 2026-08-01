@@ -8,6 +8,7 @@ import Education from './components/Education'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
+import Hire from './components/Hire'
 import GameOver from './components/GameOver'
 import { useBackgroundMusic } from './useBackgroundMusic'
 import './App.css'
@@ -26,6 +27,7 @@ function AnimatedRoutes() {
         <Route path="/skills" element={<PageTransition direction={direction}><Skills /></PageTransition>} />
         <Route path="/experience" element={<PageTransition direction={direction}><Experience /></PageTransition>} />
         <Route path="/projects" element={<PageTransition direction={direction}><Projects /></PageTransition>} />
+        <Route path="/hire" element={<PageTransition direction={direction}><Hire /></PageTransition>} />
         <Route path="/connect" element={<PageTransition direction={direction}><GameOver /></PageTransition>} />
         <Route path="*" element={<PageTransition direction={direction}><Hero /></PageTransition>} />
       </Routes>

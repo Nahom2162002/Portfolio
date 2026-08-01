@@ -680,6 +680,63 @@
   padding: 8px;
 }
 
+/* ---------- Hire ---------- */
+
+.hire-tagline {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--text-muted);
+  max-width: 560px;
+  margin-bottom: 40px;
+}
+
+.hire-status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.hire-status-card {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-border-soft);
+  padding: 20px 24px;
+}
+
+.hire-status-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.hire-status-dot {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  background: var(--accent);
+  transform: rotate(45deg);
+  animation: quest-marker-pulse 2.4s ease-in-out infinite;
+}
+
+.hire-status-name {
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.hire-status-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.hire-cta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
 /* ---------- Footer ---------- */
 
 .footer {

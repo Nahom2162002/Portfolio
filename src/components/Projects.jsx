@@ -43,7 +43,7 @@ export default function Projects() {
         ))}
       </div>
 
-      <SectionNav backLabel="← LEVEL 04" backTo="/experience" nextLabel="FINISH →" nextTo="/connect" />
+      <SectionNav backLabel="← LEVEL 04" backTo="/experience" nextLabel="LEVEL 06 →" nextTo="/hire" />
     </section>
   )
 }
