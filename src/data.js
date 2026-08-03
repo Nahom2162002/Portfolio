@@ -1,3 +1,14 @@
+export const aboutParagraphs = [
+  'Full stack developer with a B.S. in Computational Artificial Intelligence from RIT and a track record of shipping production software independently. Built and launched three SaaS products from scratch: LockedIn, InfoDiet, and CodeDuel. All with real users, Stripe billing, JWT authentication, and MongoDB Atlas backends. CodeDuel integrates the Anthropic Claude API to compete against developers on real coding problems in real time.',
+  'Open source contributor with professional experience at Honeywell. Fluent in JavaScript, TypeScript, Python, C++, Java, C#, and C — building across React, Node.js, Next.js, Django, AWS, and Azure AI.',
+]
+
+export const contactLinks = [
+  { label: 'Email', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=NahomAshagrea2002@gmail.com' },
+  { label: 'GitHub', href: 'https://github.com/Nahom2162002' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nahom-ashagrea-1626151b9/' },
+]
+
 export const levelDefs = [
   { num: '01', title: 'ABOUT ME', desc: 'Meet the character', id: 'about', route: '/about' },
   { num: '02', title: 'EDUCATION', desc: 'Skill tree origins', id: 'education', route: '/education' },

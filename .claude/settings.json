@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:4173/)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:vite-react-ssg.netlify.app)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:registry.npmjs.org)",
+      "Bash(curl -s https://registry.npmjs.org/vite-react-ssg/latest)",
+      "Bash(node -e ' *)",
+      "Bash(curl -s \"https://unpkg.com/vite-react-ssg@0.8.1/README.md\")",
+      "Bash(npm audit *)",
+      "Bash(curl -s \"https://registry.npmjs.org/vite-react-ssg/0.8.9\")",
+      "Bash(curl -s https://registry.npmjs.org/react-router-dom)",
+      "Bash(grep -oE '\\(HIRE ME|\\\\$45.65/hr|FREELANCE|FULL-TIME|EMAIL ME|LINKEDIN|LOCKEDIN|INFODIET|CODEDUEL\\)' dist/hire/index.html)",
+      "Bash(curl -s http://localhost:4174/about)",
+      "Bash(curl -s http://localhost:4174/hire)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4174/about/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4174/about)"
+    ]
+  }
+}

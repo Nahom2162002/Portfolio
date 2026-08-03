@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react'
+import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const variants = {
@@ -10,7 +10,7 @@ const variants = {
 }
 
 export default function PageTransition({ direction, children }) {
-  useLayoutEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 

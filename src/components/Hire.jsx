@@ -1,6 +1,9 @@
-import { hireRate, hireServices, hirePastWork } from '../data'
+import { hireRate, hireServices, hirePastWork, contactLinks } from '../data'
 import SectionNav from './SectionNav'
 import { useGameNav } from '../useGameNav'
+
+const emailLink = contactLinks.find((c) => c.label === 'Email').href
+const linkedinLink = contactLinks.find((c) => c.label === 'LinkedIn').href
 
 export default function Hire() {
   const { onHover, onClick } = useGameNav()
@@ -67,7 +70,7 @@ export default function Hire() {
 
       <div className="hire-cta">
         <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=NahomAshagrea2002@gmail.com"
+          href={emailLink}
           target="_blank"
           rel="noreferrer"
           className="btn-link"
@@ -77,7 +80,7 @@ export default function Hire() {
           EMAIL ME
         </a>
         <a
-          href="https://www.linkedin.com/in/nahom-ashagrea-1626151b9/"
+          href={linkedinLink}
           target="_blank"
           rel="noreferrer"
           className="btn-link"
