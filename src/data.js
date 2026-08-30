@@ -111,12 +111,30 @@ export const hireServices = [
 ]
 
 export const hirePastWork = [
+  { name: 'SENTINEL', link: 'https://sentinel-orpin-tau.vercel.app/' },
+  { name: 'VIBECHECK', link: 'https://vibecheck-web-pi.vercel.app/' },
   { name: 'LOCKEDIN', link: 'https://deeplockin.com' },
   { name: 'INFODIET', link: 'https://getinfodiet.app' },
   { name: 'CODEDUEL', link: 'https://www.duelai.dev/' },
 ]
 
 export const projects = [
+  {
+    name: 'SENTINEL',
+    icon: 'S',
+    link: 'https://sentinel-orpin-tau.vercel.app/',
+    desc: "A URL change-watcher with a Flask web dashboard and a standalone CLI twin sharing the same watch logic. Diffs whole pages, CSS selectors, or JSON feeds via BeautifulSoup and SHA-256 hashing, stores state in Upstash Redis since Vercel Functions have no persistent disk, and posts to Discord the moment a tracked target shifts — swept every 5 minutes by cron-job.org with GitHub Actions and Vercel's own cron as idempotent backups.",
+    tags: ['Python', 'Flask', 'BeautifulSoup4', 'Upstash Redis', 'Discord Webhooks', 'Vercel Cron'],
+    animation: 'sentinel',
+  },
+  {
+    name: 'VIBECHECK',
+    icon: 'V',
+    link: 'https://vibecheck-web-pi.vercel.app/',
+    desc: "A security auditor for AI-generated ('vibe-coded') repos, built as an npm-workspaces monorepo spanning a TypeScript engine, a published CLI, and a Next.js web app. Runs 8 static checks — hardcoded secrets, secret history, SQL injection, missing auth, IDOR, CORS, and rate-limiting — via isomorphic-git history scanning, with Claude Opus called in for ambiguous findings. Scan jobs run through Upstash QStash with live progress over Server-Sent Events, and the engine ships standalone as @nahom_a/vibecheck on npm.",
+    tags: ['TypeScript', 'Next.js', 'React', 'Claude API', 'Upstash Redis', 'Upstash QStash'],
+    animation: 'vibecheck',
+  },
   {
     name: 'CODEDUEL',
     icon: 'C',

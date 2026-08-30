@@ -61,11 +61,37 @@ function BeatClaudeAnimation() {
   )
 }
 
+function SentinelAnimation() {
+  return (
+    <div className="sentinel-window">
+      <span className="sentinel-scanline" />
+      <span className="sentinel-row sentinel-row-1" />
+      <span className="sentinel-row sentinel-row-2" />
+      <span className="sentinel-row sentinel-row-3" />
+      <span className="sentinel-ping" />
+    </div>
+  )
+}
+
+function VibecheckAnimation() {
+  return (
+    <div className="vibecheck-scan">
+      <span className="vibecheck-line vibecheck-line-1" />
+      <span className="vibecheck-line vibecheck-line-2" />
+      <span className="vibecheck-line vibecheck-line-3" />
+      <span className="vibecheck-glass" />
+      <span className="pixel-font vibecheck-grade">B+</span>
+    </div>
+  )
+}
+
 const ANIMATIONS = {
   infodiet: InfoDietAnimation,
   lockedin: LockedInAnimation,
   safehaven: SafeHavenAnimation,
   beatclaude: BeatClaudeAnimation,
+  sentinel: SentinelAnimation,
+  vibecheck: VibecheckAnimation,
 }
 
 export default function ProjectAnimation({ variant, className }) {
