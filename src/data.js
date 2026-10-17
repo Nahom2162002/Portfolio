@@ -36,12 +36,12 @@ export const skillGroups = [
   },
   {
     name: 'Cloud & AI',
-    items: 'AWS (Amplify, Cognito), Azure AI, OpenCV, Mediapipe',
+    items: 'AWS, Azure, OpenClaw, Claude Code',
     level: 3,
   },
   {
     name: 'Tools & DevOps',
-    items: 'Docker, GitHub Actions, CI/CD, Git, Redis, PostgreSQL, MongoDB Atlas, Vercel',
+    items: 'Docker, GitHub Actions, CI/CD, Git, Redis, PostgreSQL, Kubernetes, Vercel',
     level: 4,
   },
 ]
@@ -64,10 +64,23 @@ export const education = [
 
 export const experience = [
   {
+    role: 'Junior Developer/Microsoft 365 Systems Specialist',
+    company: 'Constellation Software Engineering LLC',
+    dates: 'Sep 2026 — Present',
+    location: 'Bethesda, MD',
+    tech: ['Python', 'Go', 'JavaScript', 'PostgreSQL', 'Azure', 'Kubernetes'],
+    bullets: [
+      'Maintained backend services for a client-facing web application, including fixing bugs, updating features and monitoring how it runs.',
+      'Deployed a containerized application to a UNIX environment using Kubernetes.',
+      'Supported Microsoft 365 systems and resolved technical issues for headquarters staff.',
+    ],
+  },
+  {
     role: 'Software Engineer',
     company: 'Civic Tech DC',
     dates: 'Feb 2026 — Present',
     location: 'Remote',
+    tech: ['React', 'Node.js', 'Hugging Face Hub', 'Python', 'Git'],
     bullets: [
       'Architected and implemented a data ingestion feature using the Hugging Face Hub API, enabling seamless import of large-scale datasets for AI model training.',
       'Collaborated on AI-driven features, streamlining the pipeline between raw data sources and model integration to improve tool accuracy.',
@@ -79,6 +92,7 @@ export const experience = [
     company: 'Honeywell',
     dates: 'May 2024 — Aug 2024',
     location: 'Atlanta, GA',
+    tech: ['React', 'Node.js', 'REST APIs', 'GitHub Actions', 'CI/CD'],
     bullets: [
       'Engineered a React-based scheduling dashboard for the Opintel Automation suite, reducing manual operational workload by 20%.',
       'Developed Node.js REST APIs and optimized task dependency handling using asynchronous job queues.',
@@ -91,6 +105,7 @@ export const experience = [
     company: 'RIT School of IGME',
     dates: 'May 2023 — Aug 2023',
     location: 'Rochester, NY',
+    tech: ['Python', 'OpenCV', 'Mediapipe', 'Redis'],
     bullets: [
       'Developed an OpenCV-based computer vision system for real-time object detection and masking.',
       'Integrated Mediapipe for accurate object tracking in interactive AI installations.',

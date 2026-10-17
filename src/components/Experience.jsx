@@ -25,6 +25,13 @@ export default function Experience() {
                 <li key={i}>{b}</li>
               ))}
             </ul>
+            <div className="project-tags experience-tech">
+              {ex.tech.map((t) => (
+                <div className="pixel-font project-tag" key={t}>
+                  {t}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       ))}
