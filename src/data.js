@@ -1,6 +1,6 @@
 export const aboutParagraphs = [
   'Full stack developer with a B.S. in Computational Artificial Intelligence from RIT and a track record of shipping production software independently. Built and launched three SaaS products from scratch: LockedIn, InfoDiet, and CodeDuel. All with real users, Stripe billing, JWT authentication, and MongoDB Atlas backends. CodeDuel integrates the Anthropic Claude API to compete against developers on real coding problems in real time.',
-  'Open source contributor with professional experience at Honeywell. Fluent in JavaScript, TypeScript, Python, C++, Java, C#, and C — building across React, Node.js, Next.js, Django, AWS, and Azure AI.',
+  'Currently a Junior Developer and Microsoft 365 Systems Specialist at Constellation Software Engineering, maintaining backend services and deploying containerized applications with Kubernetes. Previously built AI data tooling at Civic Tech DC and automation software at Honeywell. Fluent in JavaScript, TypeScript, Python, Go, C++, Java, C#, and C — building across React, Node.js, Next.js, Django, PostgreSQL, AWS, and Azure.',
 ]
 
 export const contactLinks = [
@@ -21,7 +21,7 @@ export const levelDefs = [
 export const skillGroups = [
   {
     name: 'Languages',
-    items: 'JavaScript (ES6+), TypeScript, Python, C++, Java, C#, C',
+    items: 'JavaScript (ES6+), TypeScript, Python, Go, C++, Java, C#, C',
     level: 5,
   },
   {
@@ -50,7 +50,7 @@ export const education = [
   {
     school: 'ROCHESTER INSTITUTE OF TECHNOLOGY',
     degree: 'B.S. in Computational Artificial Intelligence',
-    dates: 'Aug 2020 — May 2025',
+    dates: 'Aug 2020 — Dec 2024',
     activities: [
       'Black Awareness Coordinating Committee (BACC)',
       'The Black Thought Collective at RIT (TBTC)',
