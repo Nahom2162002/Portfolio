@@ -64,7 +64,7 @@ export const education = [
 
 export const experience = [
   {
-    role: 'Junior Developer/Microsoft 365 Systems Specialist',
+    role: 'Junior Developer / M365 Systems Specialist',
     company: 'Constellation Software Engineering LLC',
     dates: 'Sep 2026 — Present',
     location: 'Bethesda, MD',
